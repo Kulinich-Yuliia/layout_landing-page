@@ -64,43 +64,159 @@
               <a class="nav__link" href="#information">About Us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#information">Contact Us</a>
+              <a class="nav__link" href="#contact">Contact Us</a>
             </li>
+            <a href="tel:+12345555555" class="menu__phone-number">+1 234 5555-55-55</a>
+            <a href="tel:+12345555555" class="menu__call-to-order">CALL TO ORDER</a>
+
           </ul>
         </nav>
-
-        <a href="tel:+1 234 5555-55-55" class="menu__phone-number">+1 234 5555-55-55 </a>
-        <a href="tel:+1 234 5555-55-55" class="menu__call-to-order">CALL TO ORDER</a>
       </div>
     </aside>
-    <!-- <main>
-      <section class="recommended">
-        <h2>Recommended</h2>
+    <main class="page__main">
+
+      <section id="recommended" class="catalog">
+        <div class="container">
+          <h2 class="catalog__title">Recommended</h2>
+          <div class="catalog__grid catalog__grid--recommended">
+
+            <!-- КАРТКА 1: Тепер це ОДИН елемент для Grid -->
+            <article class="product-card">
+              <div class="product-card__image-container">
+                <img src="./src/images/beosound_a5.png" alt="Beosound A5">
+              </div>
+              <h2 class="product-card__title">BEOSOUND A5</h2>
+              <p class="product-card__description">Huge sound anywhere...</p>
+              <span class="product-card__price">$ 1299.00</span>
+            </article>
+
+            <!-- КАРТКА 2 -->
+            <article class="product-card">
+              <div class="product-card__image-container">
+                <img src="./src/images/beoplay_hx.png" alt="Beoplay HX">
+              </div>
+              <h2 class="product-card__title">BEOPLAY HX</h2>
+              <p class="product-card__description">Wireless noise-cancelling...</p>
+              <span class="product-card__price">$ 499.00</span>
+            </article>
+
+            <!-- КАРТКА 3 -->
+            <article class="product-card">
+              <div class="product-card__image-container">
+                <img src="./src/images/beosound_theatre.png" alt="Beosound Theatre">
+              </div>
+              <h2 class="product-card__title">BEOSOUND THEATRE</h2>
+              <p class="product-card__description">Four patent-pending acoustic...</p>
+              <span class="product-card__price">$ 3199.00</span>
+            </article>
+
+          </div>
+        </div>
       </section>
 
-      <section class="categories">
-        <h2>Categories</h2>
+      <!-- Секція Categories -->
+      <section id="categories" class="catalog">
+        <div class="container">
+          <h2 class="catalog__title">Sound. Vision. It’s your pick.</h2>
+
+          <div class="categories__list">
+
+            <!-- Portable speakers -->
+            <div class="category-group">
+              <h3 class="category-group__title">Portable speakers</h3>
+              <div class="category-group__images">
+                <img src="./src/images/portable_speakers1.png" alt="Portable speakers 1">
+                <img src="./src/images/portable_speakers2.png" alt="Portable speakers 2">
+              </div>
+            </div>
+
+            <!-- Earphones -->
+            <div class="category-group">
+              <h3 class="category-group__title">Earphones</h3>
+              <div class="category-group__images">
+                <img src="./src/images/earphones1.png" alt="Earphones 1">
+                <img src="./src/images/earphones2.png" alt="Earphones 2">
+              </div>
+            </div>
+
+            <!-- Smart Home -->
+            <div class="category-group">
+              <h3 class="category-group__title">Smart Home</h3>
+              <div class="category-group__images">
+                <img src="./src/images/smarthome1.png" alt="Smart home 1">
+                <img src="./src/images/smarthome2.png" alt="Smart home 2">
+              </div>
+            </div>
+          </div>
+          <button class="catalog__view-all">View all</button>
+        </div>
       </section>
 
-      <section class="information">
-        <h2>About US</h2>
+      <section id="information" class="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__text-block">
+              <h2 class="about__title">About Us</h2>
+              <p class="about__description">
+                Timeless, for 50 years and counting
+              </p>
+              <p class="about__description">
+                Bang & Olufsen is expanding its Recreated Classics Program with the launch of Beosystems – a limited edition music system that transcends time by bridging the gap between one of our iconic designs from 1972 and today’s cutting-edge digital technology.
+              </p>
+            </div>
+
+            <div class="about__image-block">
+              <img
+              src="./src/images/down_image.png"
+              alt="Our craft"
+              class="about__img"
+              >
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="contacts">
-        <h2>Contact Us</h2>
-      </section>
+      <!-- Секція Contact Us -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h1 class="contact_title">Contact Us</h1>
+          <div class="contact__form">
+            <form action="#" class="contact__form form">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Name"
+              >
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Email"
+              >
+              <textarea class="form__input form__input--textarea" placeholder="Message"></textarea>
+              <button type="submit" class="form--button">Send</button>
+            </form>
 
-      <section class="just-number">
-        <h2>+1 234 5555-55-55</h2>
-      </section>
-
-      <section class="just-text">
-        <h2>CALL TO ORDER</h2>
+            <div class="contact__info">
+              <div class="contact__item">
+                <p class="contact__label">Phone</p>
+                <a href="tel:+12345555555" class="contact__link">+1 234 5555-55-55</a>
+              </div>
+              <div class="contact__item">
+                <p class="contact__label">Email</p>
+                <a href="mailto:hello@nothing.com" class="contact__link">hello@nothing.com</a>
+              </div>
+              <div class="contact__item">
+                <p class="contact__label">Address</p>
+                <address class="contact__address">
+                  400 first ave.<br>
+                  suite 700<br>
+                  Minneapolis, MN 55401
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <h1>Your senses. Set free.</h1>
-    </footer> -->
   </body>
 </html>

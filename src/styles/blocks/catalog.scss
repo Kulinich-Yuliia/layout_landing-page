@@ -1,0 +1,82 @@
+.catalog__grid {
+  display: grid;
+  gap: 24px;
+
+  // Цей запис автоматично шукатиме клас catalog__grid--recommended в HTML
+  &--recommended {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.catalog__view-all {
+  // Параметри з Figma (image_8661bc.jpg)
+  display: block;
+  width: 324px;          // Width з макета
+  height: 56px;         // Height з макета
+  margin: 40px auto 0;  // Центрування та відступ зверху
+
+  // Стилізація
+  background-color: #F98921; // Колір Hex з макета
+  color: #FFFFFF;
+  border-radius: 8px;        // Radius з макета
+  border: none;
+
+  // Текст та внутрішні відступи
+  padding: 0 48px;           // Padding Left/Right з макета
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;           // Зазвичай стандарт для кнопок
+  font-weight: 700;          // Bold
+  text-transform: uppercase; // Капсом, як на фото
+  cursor: pointer;
+
+  // Ефект при наведенні
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.product-card {
+  width: 324px; // Фіксована ширина картки з макета
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__image-container {
+    width: 324px;          // Layout Width з Figma
+    height: 324px;         // Layout Height з Figma
+    background-color: #F9F9F9; // Color з Figma
+    border-radius: 4px;    // Radius з Figma
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      max-width: 85%;      // Щоб картинка була всередині квадрата з відступами
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-size: 18px;       // На око з макета
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 8px 0 4px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #4D4D4D;        // Темно-сірий текст
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: auto;      // Притисне ціну до низу, якщо описи різної довжини
+  }
+}
