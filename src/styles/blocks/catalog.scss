@@ -5,18 +5,18 @@
   flex-direction: column;
   gap: 48px;
 
-  @include onTablet {
+  @include on-tablet {
     gap: 56px;
   }
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @include onTablet {
+    @include on-tablet {
       grid-template-columns: repeat(6, 1fr);
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-template-columns: repeat(12, 1fr);
     }
 
@@ -24,7 +24,7 @@
     & > :nth-child(n) {
       grid-column: 1 / -1;
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }

@@ -25,11 +25,11 @@ a {
   margin: 0 auto;
   padding: 64px 20px 0;
 
-  @include onTablet {
+  @include on-tablet {
     padding: 120px 72px 0;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding: 120px 120px 0;
   }
 }
